@@ -2,8 +2,12 @@
  $q = isset($_GET["q"]) ? $_GET["q"]  : '';
 
  if ($q == '') {
-     header('Location: '.URL.'/form');
- } else {
+     header('Location: '.URL.'form');
+ }
+ elseif ($q=="form") {
+     $page="form";
+ }
+ else {
     $page = '404';
 }
 
